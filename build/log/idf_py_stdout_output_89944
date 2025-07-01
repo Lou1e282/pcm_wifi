@@ -1,0 +1,279 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400490d5
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 30 2025 16:57:06[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=304c0h (197824) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=000404e8 vaddr=3fc9ab00 size=04a14h ( 18964) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=00044f04 vaddr=40374000 size=0b114h ( 45332) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=9c2f4h (639732) map[0m
+[0;32mI (251) esp_image: segment 4: paddr=000ec31c vaddr=4037f114 size=0b91ch ( 47388) load[0m
+[0;32mI (262) esp_image: segment 5: paddr=000f7c40 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (271) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (271) boot: Disabling RNG early entropy source...[0m
+[0;32mI (281) cpu_start: Multicore app[0m
+[0;32mI (291) cpu_start: Pro cpu start user code[0m
+[0;32mI (291) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (291) app_init: Application information:[0m
+[0;32mI (291) app_init: Project name:     wifitls[0m
+[0;32mI (295) app_init: App version:      248f99a-dirty[0m
+[0;32mI (299) app_init: Compile time:     Jun 30 2025 16:56:59[0m
+[0;32mI (304) app_init: ELF file SHA256:  946e7361e...[0m
+[0;32mI (308) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (313) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (317) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (321) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (324) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (331) heap_init: At 3FCA3780 len 00045F90 (279 KiB): RAM[0m
+[0;32mI (336) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (341) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (346) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (353) spi_flash: detected chip: generic[0m
+[0;32mI (355) spi_flash: flash io: dio[0m
+[0;33mW (358) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (371) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (377) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (384) main_task: Started on CPU0[0m
+[0;32mI (394) main_task: Calling app_main()[0m
+[0;32mI (414) pp: pp rom version: e7ae62f[0m
+[0;32mI (414) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (424) wifi:wifi driver task: 3fcad9a0, prio:23, stack:6656, core=0[0m
+[0;32mI (434) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (434) wifi:wifi certification version: v7.0[0m
+[0;32mI (434) wifi:config NVS flash: enabled[0m
+[0;32mI (434) wifi:config nano formatting: disabled[0m
+[0;32mI (434) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (444) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (444) wifi:Init management short buffer num: 32[0m
+[0;32mI (444) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (454) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (454) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (464) wifi:Init static rx buffer num: 10[0m
+[0;32mI (464) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (474) wifi_init: rx ba win: 6[0m
+[0;32mI (474) wifi_init: accept mbox: 6[0m
+[0;32mI (474) wifi_init: tcpip mbox: 32[0m
+[0;32mI (474) wifi_init: udp mbox: 6[0m
+[0;32mI (484) wifi_init: tcp mbox: 6[0m
+[0;32mI (484) wifi_init: tcp tx win: 5760[0m
+[0;32mI (484) wifi_init: tcp rx win: 5760[0m
+[0;32mI (494) wifi_init: tcp mss: 1440[0m
+[0;32mI (494) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (494) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (504) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;32mI (544) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (564) wifi:mode : sta (fc:01:2c:d7:ce:dc)[0m
+[0;32mI (564) wifi:enable tsf[0m
+[0;32mI (594) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (594) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (594) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (604) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (614) wifi:<ba-add>idx:0 (ifx:0, cc:2d:21:2f:59:21), tid:0, ssn:0, winSize:64[0m
+[0;32mI (634) wifi:connected with Chinanet-2.4G-5920, aid = 6, channel 1, BW20, bssid = cc:2d:21:2f:59:21[0m
+[0;32mI (634) wifi:security: WPA2-PSK, phy: bgn, rssi: -68[0m
+[0;32mI (644) wifi:pm start, type: 1[0m
+
+[0;32mI (644) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (644) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (694) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;33mW (1214) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (1314) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (1414) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (1514) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (1614) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (1714) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (1814) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (1914) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (2014) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (2114) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (2214) esp_netif_handlers: sta ip: 192.168.0.106, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (2214) pcm_test: Got IP: 192.168.0.106[0m
+[0;32mI (2214) pcm_test: http_post_task started[0m
+[0;33mW (2214) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (2214) main_task: Returned from app_main()[0m
+[0;33mW (2314) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (2414) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (2514) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (2614) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (2714) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (2814) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (2834) esp-x509-crt-bundle: Certificate validated[0m
+[0;33mW (2914) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (3014) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (3114) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (3214) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (3314) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (3414) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (3514) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (3614) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (3714) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (3774) pcm_test: HTTP stream open[0m
+[0;33mW (3814) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (3914) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (4014) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (4114) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (4214) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (4314) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (4414) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (4514) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (4614) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (4684) pcm_test: Uploaded 16384 bytes (total: 16384)[0m
+[0;32mI (4694) pcm_test: Uploaded 4096 bytes (total: 20480)[0m
+[0;32mI (4994) pcm_test: Uploaded 1024 bytes (total: 21504)[0m
+[0;33mW (5334) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (5434) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (5534) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (5614) pcm_test: Uploaded 9216 bytes (total: 30720)[0m
+[0;32mI (5614) pcm_test: Uploaded 2048 bytes (total: 32768)[0m
+[0;33mW (5944) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (6044) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (6144) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (6224) pcm_test: Uploaded 9216 bytes (total: 41984)[0m
+[0;33mW (6494) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (6534) pcm_test: Uploaded 7168 bytes (total: 49152)[0m
+[0;33mW (6744) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (6844) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (6944) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (7044) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (7144) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (7154) pcm_test: Uploaded 13312 bytes (total: 62464)[0m
+[0;32mI (7464) pcm_test: Uploaded 3072 bytes (total: 65536)[0m
+[0;33mW (7674) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (7774) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (7874) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (7974) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (8074) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (8174) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (8274) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (8374) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (8414) pcm_test: Uploaded 13312 bytes (total: 78848)[0m
+[0;32mI (8684) pcm_test: Uploaded 3072 bytes (total: 81920)[0m
+[0;33mW (8924) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (9024) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (9124) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (9204) pcm_test: Uploaded 12288 bytes (total: 94208)[0m
+[0;32mI (9214) pcm_test: Uploaded 4096 bytes (total: 98304)[0m
+[0;33mW (9694) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (9794) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (9804) pcm_test: Uploaded 5120 bytes (total: 103424)[0m
+[0;33mW (9974) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (10074) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (10174) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (10274) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (10374) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (10424) pcm_test: Uploaded 11264 bytes (total: 114688)[0m
+[0;32mI (10734) pcm_test: Uploaded 9216 bytes (total: 123904)[0m
+[0;33mW (11064) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (11164) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (11264) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (11344) pcm_test: Uploaded 7168 bytes (total: 131072)[0m
+[0;33mW (11544) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (11644) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (11744) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (11844) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (11944) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (12044) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (12144) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (12244) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (12274) pcm_test: Uploaded 13312 bytes (total: 144384)[0m
+[0;32mI (12584) pcm_test: Uploaded 3072 bytes (total: 147456)[0m
+[0;33mW (12764) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (12864) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (12964) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (13064) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (13164) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (13264) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (13364) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (13404) pcm_test: Uploaded 14336 bytes (total: 161792)[0m
+[0;32mI (13724) pcm_test: Uploaded 2048 bytes (total: 163840)[0m
+[0;33mW (13914) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (14014) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (14114) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (14214) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (14314) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (14414) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (14514) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (14614) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (14714) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (14814) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (14844) pcm_test: Uploaded 14336 bytes (total: 178176)[0m
+[0;32mI (14844) pcm_test: Uploaded 2048 bytes (total: 180224)[0m
+[0;32mI (15144) pcm_test: Uploaded 4096 bytes (total: 184320)[0m
+[0;33mW (15484) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (15584) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (15684) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (15774) pcm_test: Uploaded 9216 bytes (total: 193536)[0m
+[0;33mW (16054) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (16064) pcm_test: Uploaded 3072 bytes (total: 196608)[0m
+[0;33mW (16184) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (16284) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (16384) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (16484) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (16584) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (16684) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (16784) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (16884) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (16984) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (16984) pcm_test: Uploaded 13312 bytes (total: 209920)[0m
+[0;32mI (16984) pcm_test: Uploaded 3072 bytes (total: 212992)[0m
+[0;33mW (17494) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (17594) pcm_test: Uploaded 4096 bytes (total: 217088)[0m
+[0;33mW (17724) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (17824) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (17924) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (18024) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (18124) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (18214) pcm_test: Uploaded 12288 bytes (total: 229376)[0m
+[0;32mI (18544) pcm_test: Uploaded 5120 bytes (total: 234496)[0m
+[0;33mW (18744) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (18844) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (18944) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (19044) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (19134) pcm_test: Uploaded 11264 bytes (total: 245760)[0m
+[0;32mI (19444) pcm_test: Uploaded 9216 bytes (total: 254976)[0m
+[0;33mW (19774) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (19874) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (19974) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (20074) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (20074) pcm_test: Uploaded 7168 bytes (total: 262144)[0m
+[0;33mW (20314) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (20414) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (20514) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (20614) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (20664) pcm_test: Uploaded 9216 bytes (total: 271360)[0m
+[0;33mW (20954) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (20974) pcm_test: Uploaded 7168 bytes (total: 278528)[0m
+[0;33mW (21214) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (21284) pcm_test: Uploaded 9216 bytes (total: 287744)[0m
+[0;33mW (21564) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (21664) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (21764) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (21864) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (21894) pcm_test: Uploaded 7168 bytes (total: 294912)[0m
+[0;33mW (22104) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (22204) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (22304) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (22404) pcm_test: Ringbuffer full – dropping[0m
+[0;33mW (22504) pcm_test: Ringbuffer full – dropping[0m
+[0;32mI (22504) pcm_test: Uploaded 9216 bytes (total: 304128)[0m
